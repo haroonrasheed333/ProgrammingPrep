@@ -1,7 +1,7 @@
 ProgrammingPrep
 ===============
 
-##Arrays
+###Arrays
 1. [Tape Equilibrium Python](TapeEquilibrium.py) - Minimal difference that can be achieved between splices of an array.
 2. [Tape Equilibrium Java](TapeEquilibrium.java)
 3. [Perm Missing](PermMissingJava.java) - Given an array with numbers from 1...N+1 with one number missing. Find the missing number.
@@ -13,6 +13,6 @@ ProgrammingPrep
 9. [Max Counters](MaxCounters.java)
 10. 
 
-##String Manipulation
+###String Manipulation
 1. [Unique String](CCI-1.py) - Check if a string has all unique characters.
 2. 
