@@ -12,6 +12,7 @@ ProgrammingPrep
 8. [Number of pairs with diff N](Pairs_hackerrank.java) - Given an array, and a number N, find the number of pairs in array with diff N.
 9. [Max Counters](MaxCounters.java)
 10. [Triangle](TriangleNumber.java) - Determine whether a triangle can be built from a given set of edges.
+11. [Max Product of 3](MaxProdOfThree.java) - Find the maximum product of 3 numbers in an array (can contain negative numbers)
 
 ###String Manipulation
 1. [Unique String](CCI-1.py) - Check if a string has all unique characters.
