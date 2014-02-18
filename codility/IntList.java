@@ -84,12 +84,12 @@ public class IntList {
 
     }
 
-    public IntList SortedInsert(int value){
-        IntList curr = this;
+    public static IntList SortedInsert(int value, IntList head){
+        IntList curr = head;
 
-        if(value <= curr.value){
+        if(curr != null && value <= curr.value){
             IntList temp = new IntList(value);
-            temp.next = this;
+            temp.next = head;
             return temp;
         }
         else{
@@ -112,7 +112,7 @@ public class IntList {
                 curr = curr.next;
 
             }
-            return this;
+            return head;
 
         }
 

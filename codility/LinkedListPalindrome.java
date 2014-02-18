@@ -52,7 +52,7 @@ public class LinkedListPalindrome {
 
         number1Head = number1Head.InsertAtNthLocation(0,9);
 
-        number1Head = number1Head.SortedInsert(0);
+        number1Head = IntList.SortedInsert(6,number1Head);
         System.out.print("done");
 
     }
