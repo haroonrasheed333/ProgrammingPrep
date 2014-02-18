@@ -16,4 +16,34 @@ public class IntList {
     public void SetNext(IntList nxt){
         next = nxt;
     }
+
+
+    public int getLength(){
+        IntList curr = this;
+        int length = 0;
+        while(curr != null){
+            length++;
+            curr = curr.next;
+        }
+
+        return length;
+    }
+
+    public IntList Reverse(){
+        IntList curr = this;
+        IntList nxt = null;
+        IntList prev = null;
+
+        while(curr != null){
+            nxt = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = nxt;
+
+
+        }
+
+        return prev;
+    }
+
 }
