@@ -1,6 +1,7 @@
 // you can also use imports, for example:
-import java.math.*;
-class Solution {
+package codility;
+
+public class PermMissingJava {
     public int solution(int[] A) {
         // write your code in Java SE 7
         long length = A.length;

@@ -1,6 +1,9 @@
 // you can also use imports, for example:
 // import java.math.*;
-class Solution {
+package codility;
+
+
+public class PermCheck_xormethod {
     public int solution(int[] A) {
         
         int length = A.length;

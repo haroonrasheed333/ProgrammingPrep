@@ -1,6 +1,8 @@
 // you can also use imports, for example:
 // import java.math.*;
-class Solution {
+package codility;
+
+class DeleteNodeFromListGivenOnlyThatNode {
     public static void solution(IntList current) {
         current.value = current.next.value;
         current.next = current.next.next;
@@ -17,7 +19,7 @@ class Solution {
             curr = curr.next;
         }
         System.out.println(head.next.next.next.next.value);
-        Solution.solution(head.next.next.next.next);
+        DeleteNodeFromListGivenOnlyThatNode.solution(head.next.next.next.next);
         System.out.println(head.next.next.next.next.value);
 
 

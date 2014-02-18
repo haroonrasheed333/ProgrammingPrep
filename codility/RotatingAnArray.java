@@ -1,10 +1,12 @@
+package codility;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 // you can also use imports, for example:
 // import java.math.*;
-class Solution {
+class RotatingAnArray {
     public static void main(String[] args) throws IOException {
         BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));
         String[] tok = obj.readLine().split(" ");

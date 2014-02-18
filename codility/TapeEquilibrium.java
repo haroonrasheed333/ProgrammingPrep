@@ -1,6 +1,8 @@
 // you can also use imports, for example:
 // import java.math.*;
-class Solution {
+package codility;
+
+class TapeEquilibrium {
     public int solution(int[] A) {
         // write your code in Java SE 7
         int[] temp = new int[A.length];

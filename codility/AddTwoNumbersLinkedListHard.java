@@ -1,6 +1,7 @@
+package codility;
 // you can also use imports, for example:
 // import java.math.*;
-class Solution {
+class AddTwoNumbersLinkedListHard {
     public static IntList solution(IntList number1, IntList number2) {
 
         IntList sum = null;
@@ -49,23 +50,29 @@ class Solution {
 
     public static void main(String[] args) {
 
-        IntList number1Head = new IntList(7);
+        IntList number1Head = new IntList(1);
         IntList number1 = number1Head;
-        number1.next = new IntList(1);
-        number1 = number1.next;
         number1.next = new IntList(6);
         number1 = number1.next;
         number1.next = new IntList(1);
         number1 = number1.next;
+        number1.next = new IntList(7);
+        number1 = number1.next;
 
-        IntList number2Head = new IntList(5);
+
+        number1Head = number1Head.Reverse();
+
+        IntList number2Head = new IntList(2);
         IntList number2 = number2Head;
         number2.next = new IntList(9);
         number2 = number2.next;
-        number2.next = new IntList(2);
+        number2.next = new IntList(5);
         number2 = number2.next;
 
-        IntList sum = Solution.solution(number1Head,number2Head);
+         number2Head = number2Head.Reverse();
+
+
+        IntList sum = AddTwoNumbersLinkedListHard.solution(number1Head,number2Head).Reverse();
         System.out.print("hey");
     }
 

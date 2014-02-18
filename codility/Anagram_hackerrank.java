@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package codility;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.util.HashMap;
 /**
  * Created by haroon on 2/15/14.
  */
-public class Anagram {
+public class Anagram_hackerrank {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num_inputs = Integer.parseInt(br.readLine());

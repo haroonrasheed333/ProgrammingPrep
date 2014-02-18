@@ -1,6 +1,8 @@
 // you can also use imports, for example:
 // import java.math.*;
-class Solution {
+package codility;
+
+class KthLastElementLinkedList {
     public static int solution(IntList head, int k) {
         IntList fast = head;
         IntList slow = head;
@@ -25,7 +27,7 @@ class Solution {
             curr = curr.next;
         }
 
-       System.out.print( Solution.solution(head,2));
+       System.out.print( KthLastElementLinkedList.solution(head,2));
 
 
     }

@@ -1,6 +1,8 @@
 // you can also use imports, for example:
 // import java.math.*;
-class Solution {
+package codility;
+
+class FrogRiver {
     public int solution(int X, int[] A) {
         // write your code in Java SE 7
         

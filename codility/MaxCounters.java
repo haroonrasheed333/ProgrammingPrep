@@ -1,4 +1,6 @@
- public  static int[] solution(int N, int[] A) {
+package codility;
+public class MaxCounters{
+    public  static int[] solution(int N, int[] A) {
         // write your code in Java SE 7
 
         int[] counter_arr = new int[N];
@@ -21,3 +23,5 @@
         return counter_arr;
 
     }
+
+}

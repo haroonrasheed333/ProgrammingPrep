@@ -1,6 +1,8 @@
 // you can also use imports, for example:
 // import java.math.*;
-class Solution {
+package codility;
+
+class CircularLinkedList {
     public static IntList solution(IntList head) {
 
         IntList current = head;
@@ -46,7 +48,7 @@ class Solution {
 
         curr.next = temp;
 
-        IntList data = Solution.solution(head);
+        IntList data = CircularLinkedList.solution(head);
 
 
     }

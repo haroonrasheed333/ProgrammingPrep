@@ -1,6 +1,8 @@
 /**
  * Created by rahmanaicc on 2/16/14.
  */
+package codility;
+
 public class IntList {
     public int value;
     public IntList next;

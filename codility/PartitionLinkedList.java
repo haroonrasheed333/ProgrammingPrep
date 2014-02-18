@@ -1,6 +1,8 @@
 // you can also use imports, for example:
 // import java.math.*;
-class Solution {
+package codility;
+
+class PartitionLinkedList {
     public static IntList solution(IntList head, int x) {
 
         IntList current = head;
@@ -57,7 +59,7 @@ class Solution {
         }
 
 
-        IntList newList = Solution.solution(head,0);
+        IntList newList = PartitionLinkedList.solution(head,0);
 
         while (newList != null){
             System.out.println(newList.value);
