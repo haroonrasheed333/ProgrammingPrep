@@ -1,6 +1,8 @@
 // you can also use imports, for example:
 // import java.math.*;
-class Solution {
+package codility;
+
+class TriangleNumber {
        public static void quickSort(int[] arr,int left,int right) {
         int i = left, j = right;
         int pivot = arr[(i+j) / 2];
