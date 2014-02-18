@@ -84,4 +84,39 @@ public class IntList {
 
     }
 
+    public IntList SortedInsert(int value){
+        IntList curr = this;
+
+        if(value <= curr.value){
+            IntList temp = new IntList(value);
+            temp.next = this;
+            return temp;
+        }
+        else{
+            while(curr != null){
+
+
+                if(curr.next != null){
+                    if(value >= curr.value && value < curr.next.value){
+                        IntList temp =curr.next;
+                        curr.next = new IntList(value);
+                        curr.next.next = temp;
+                        break;
+                    }
+                }
+                else{
+                    curr.next = new IntList(value);
+                    break;
+                }
+
+                curr = curr.next;
+
+            }
+            return this;
+
+        }
+
+    }
+
+
 }
