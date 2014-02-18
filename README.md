@@ -13,15 +13,18 @@ ProgrammingPrep
 9. [Max Counters](MaxCounters.java)
 10. [Triangle](TriangleNumber.java) - Determine whether a triangle can be built from a given set of edges.
 11. [Max Product of 3](MaxProdOfThree.java) - Find the maximum product of 3 numbers in an array (can contain negative numbers)
+12. [Rotate an array](RotatingAnArray.java) - Rotate an array K times, then find the elements at a given position in the rotated array
+13. [Make anagram](MakeItAnagram.java) - Make a string1 anagram of string2 by deleting characters
 
 ###String Manipulation
 1. [Unique String](CCI-1.py) - Check if a string has all unique characters.
 2. [Real Anagrams](Anagram_hackerrank.java) - Number of changes required for string1 to become anagram of strin2
 
 ###Linked List
-1. [Delete Node](DeleteNodeFromListGivenOnlyThatNode.java)
+1. [Delete Node](DeleteNodeFromListGivenOnlyThatNode.java) - Delete a node from a linked list given only acces to that node
 2. [Add Two Numbers Easy](AddTwoNumbersLinkedListEasy.java) - Add two numbers with each digit representing a linked list node.
 3. [Kth Element from end of a linked list](KthLastElementLinkedList.java)
+4. [Circulat Linked List](CircularLinkedList.java) - Find the node at which loop occurs in a linked list
 
 ###Graphs
 1. [Kevin Bacon - Dijkstra](djikstra.py)
