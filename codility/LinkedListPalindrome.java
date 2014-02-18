@@ -6,7 +6,7 @@ import java.util.Stack;
  * Created by rahmanaicc on 2/18/14.
  */
 public class LinkedListPalindrome {
-    public static boolean CheckPalindrome(IntList head){
+    public static boolean CheckPalindromeStack(IntList head){
         Stack<Integer> numbStack = new Stack<Integer>();
         IntList curr = head;
         int len = head.getLength();
@@ -32,6 +32,7 @@ public class LinkedListPalindrome {
         return true;
     }
 
+
     public static void main(String[] args) {
         IntList number1Head = new IntList(1);
         IntList number1 = number1Head;
@@ -44,7 +45,13 @@ public class LinkedListPalindrome {
         number1.next = new IntList(1);
         number1 = number1.next;
 
-        System.out.print(LinkedListPalindrome.CheckPalindrome(number1Head));
+
+
+
+        System.out.print(LinkedListPalindrome.CheckPalindromeStack(number1Head));
+
+        number1Head = number1Head.InsertAtNthLocation(0,9);
+        System.out.print("done");
 
     }
 }

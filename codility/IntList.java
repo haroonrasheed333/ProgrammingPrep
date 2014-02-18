@@ -48,4 +48,40 @@ public class IntList {
         return prev;
     }
 
+    public IntList InsertAtNthLocation(int n, int value){
+        IntList curr = this;
+        int counter =0;
+        if(n<0) return this;
+        if(n==0){
+
+            IntList temp = new IntList(value);
+            temp.next = this;
+            return temp;
+        }
+        else{
+            while(curr != null){
+
+                if(counter == n-1){
+
+                    if(curr.next == null){
+                        curr.next = new IntList(value);
+                        break;
+                    }
+                    else{
+                        IntList temp = curr.next.next;
+                        curr.next = new IntList(value);
+                        curr.next.next = temp;
+                        break;
+                    }
+
+                }
+                counter ++;
+                curr = curr.next;
+            }
+
+            return this;
+        }
+
+    }
+
 }
