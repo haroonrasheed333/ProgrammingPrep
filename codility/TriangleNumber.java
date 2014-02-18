@@ -35,7 +35,7 @@ class TriangleNumber {
         
         if(t.length >3)
         // write your code in Java SE 7
-            Solution.quickSort(t, 0, t.length - 1);
+            TriangleNumber.quickSort(t, 0, t.length - 1);
 
         for(int i=0;i<t.length-2;i++){
             if(t[i] > 0 && t[i+1] >0 && t[i+2] >0 ){
