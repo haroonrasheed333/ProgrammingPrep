@@ -22,7 +22,7 @@ ProgrammingPrep
 
 ###Linked List
 1. [Delete Node](DeleteNodeFromListGivenOnlyThatNode.java) - Delete a node from a linked list given only acces to that node
-2. [Add Two Numbers Easy](AddTwoNumbersLinkedListEasy.java) - Add two numbers with each digit representing a linked list node.
+2. [Add Two Numbers Easy](AddTwoNumbersLinkedListEasy.java) - Add two numbers with each digit representing a linked list node. The digits are reversed and added to linked list.
 3. [Kth Element from end of a linked list](KthLastElementLinkedList.java)
 4. [Circulat Linked List](CircularLinkedList.java) - Find the node at which loop occurs in a linked list
 
