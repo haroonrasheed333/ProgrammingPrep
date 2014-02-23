@@ -56,7 +56,6 @@ public class BST {
         }
     }
 
-
     public static void preOrderTraversal(Tree root) {
         if (root == null)
             System.out.println("Empty BST");
@@ -131,29 +130,6 @@ public class BST {
 
     }
 
-    public static void main(String[] args) {
-        int[] A = {3,5,1,2,12,7,8,0,13,4,5};
-        Tree root = null;
-        for(int i = 0; i <A.length; i++) {
-            root = BST.ConstructBST(root, A[i]);
-        }
-//
-//        System.out.println("In");
-//        BST.inOrderTraversal(root);
-//        System.out.println("Post");
-//        BST.postOrderTraversal(root);
-//        System.out.println("Pre");
-//        BST.preOrderTraversal(root);
-
-        System.out.println(BST.searchBST(root, 3));
-        System.out.println(BST.findClosestValue(root, 100));
-
-        System.out.println(BST.verifyBST(root,Integer.MIN_VALUE,Integer.MAX_VALUE));
-        BST.DoubleTree(root);
-        System.out.println("done");
-
-     }
-
     public  static boolean verifyBST(Tree root,int min, int max ){
 
         if(root == null) return true;
@@ -163,7 +139,6 @@ public class BST {
         return verifyBST(root.left, min, root.value) && verifyBST(root.right, root.value + 1, max);
 
     }
-
 
     public static void DoubleTree(Tree root){
         if(root == null) System.out.print("I shouldnt be here");
@@ -181,6 +156,91 @@ public class BST {
 
 
     }
+
+    public static int Size(Tree root){
+
+        int size = 0;
+        if(root == null) return  0;
+        return Size(root.left) + 1 + Size(root.right) ;
+    }
+
+    public static int MaxDepth(Tree root){
+        int left_size =  0;
+        int right_size =  0;
+        if(root == null) return 0;
+        else{
+            if(root.left != null) left_size = MaxDepth(root.left) ;
+            if(root.right != null) right_size = MaxDepth(root.right) ;
+        }
+        return left_size > right_size ? left_size+1 :right_size+1;
+    }
+
+    public static int GetMaximum(Tree root){
+        if (root == null) return Integer.MIN_VALUE;
+        int left =  GetMaximum(root.left);
+        int right = GetMaximum(root.right);
+        return (root.value > left ) ? (root.value > right ) ? root.value : right : left;
+
+    }
+
+    public static int GetMinimum(Tree root){
+        if (root == null) return Integer.MAX_VALUE;
+        int left =  GetMinimum(root.left);
+        int right = GetMinimum(root.right);
+        return (root.value < left ) ? (root.value < right ) ? root.value : right : left;
+
+    }
+
+
+
+    public static int GetMinimumOfBST(Tree root){
+        Tree curr = root;
+        while(curr.left != null){
+            curr = curr.left;
+        }
+        return  curr.value;
+    }
+
+    public static int GetMaximumOfBST(Tree root){
+        Tree curr = root;
+        while(curr.right != null){
+            curr = curr.right;
+        }
+        return  curr.value;
+    }
+
+    public static void main(String[] args) {
+        int[] A = {3,1,2,12,7,8,0,13,4,5,-1};
+        Tree root = null;
+        for(int i = 0; i <A.length; i++) {
+            root = BST.ConstructBST(root, A[i]);
+        }
+//
+//        System.out.println("In");
+//        BST.inOrderTraversal(root);
+//        System.out.println("Post");
+//        BST.postOrderTraversal(root);
+//        System.out.println("Pre");
+//        BST.preOrderTraversal(root);
+
+        System.out.println(BST.searchBST(root, 3));
+        System.out.println(BST.findClosestValue(root, 100));
+
+        System.out.println(BST.verifyBST(root,Integer.MIN_VALUE,Integer.MAX_VALUE));
+        //BST.DoubleTree(root);
+        System.out.println(BST.Size(root));
+        System.out.println(BST.MaxDepth(root));
+        System.out.println(BST.GetMinimumOfBST(root));
+        System.out.println(BST.GetMaximumOfBST(root));
+        System.out.println(BST.GetMaximum(root));
+        System.out.println(BST.GetMinimum(root));
+
+        System.out.println("done");
+
+     }
+
+
+
 
 
 
