@@ -131,8 +131,6 @@ public class BST {
 
     }
 
-
-
     public static void main(String[] args) {
         int[] A = {3,5,1,2,12,7,8,0,13,4,5};
         Tree root = null;
@@ -149,9 +147,23 @@ public class BST {
 
         System.out.println(BST.searchBST(root, 3));
         System.out.println(BST.findClosestValue(root, 100));
+
+        System.out.println(BST.verifyBST(root,Integer.MIN_VALUE,Integer.MAX_VALUE));
         System.out.println("done");
 
      }
+
+    public  static boolean verifyBST(Tree root,int min, int max ){
+
+        if(root == null) return true;
+
+        if(root.value < min  || root.value > max) return false;
+
+        return verifyBST(root.left, min, root.value) && verifyBST(root.right, root.value + 1, max);
+
+    }
+
+
 
 
 }
