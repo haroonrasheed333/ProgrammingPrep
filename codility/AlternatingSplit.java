@@ -5,6 +5,10 @@ package codility;
  */
 public class AlternatingSplit {
     public static IntList Solution (IntList head1) {
+
+        if(head1.next == null){
+            return null;
+        }
         IntList curr1 = head1;
         IntList head2 = new IntList(curr1.next.value);
         IntList curr2 = head2;
@@ -36,16 +40,16 @@ public class AlternatingSplit {
         IntList number1 = number1Head;
         number1.next = new IntList(2);
         number1 = number1.next;
-        number1.next = new IntList(3);
-        number1 = number1.next;
-        number1.next = new IntList(4);
-        number1 = number1.next;
-        number1.next = new IntList(5);
-        number1 = number1.next;
-        number1.next = new IntList(6);
-        number1 = number1.next;
-        number1.next = new IntList(7);
-        number1 = number1.next;
+//        number1.next = new IntList(3);
+//        number1 = number1.next;
+//        number1.next = new IntList(4);
+//        number1 = number1.next;
+//        number1.next = new IntList(5);
+//        number1 = number1.next;
+//        number1.next = new IntList(6);
+//        number1 = number1.next;
+//        number1.next = new IntList(7);
+//        number1 = number1.next;
 
         IntList newLst = AlternatingSplit.Solution(number1Head);
 
