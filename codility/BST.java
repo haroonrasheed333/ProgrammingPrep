@@ -85,9 +85,56 @@ public class BST {
         }
     }
 
+    public static int findClosestValue(Tree root, int k) {
+
+
+
+        int diff = 0;
+
+        int closestVal = Integer.MIN_VALUE;
+
+        if(root != null){
+            diff = Math.abs(k-root.value);
+            closestVal = root.value;
+        }
+
+        while (root != null) {
+
+
+            if (k == root.value)
+                return k;
+
+            if (k < root.value)
+            {
+                int d = Math.abs(k-root.value);
+                if(d <= diff){
+                    diff = d;
+                    closestVal = root.value;
+                }
+                root = root.left;
+
+            }
+
+            else{
+                int d = Math.abs(k-root.value);
+                if(d <= diff){
+                    diff = d;
+                    closestVal = root.value;
+                }
+                root = root.right;
+
+            }
+
+        }
+
+        return closestVal;
+
+    }
+
+
 
     public static void main(String[] args) {
-        int[] A = {3,5,1,2,7,8,0,3,4,5};
+        int[] A = {3,5,1,2,12,7,8,0,13,4,5};
         Tree root = null;
         for(int i = 0; i <A.length; i++) {
             root = BST.ConstructBST(root, A[i]);
@@ -101,7 +148,7 @@ public class BST {
 //        BST.preOrderTraversal(root);
 
         System.out.println(BST.searchBST(root, 3));
-
+        System.out.println(BST.findClosestValue(root, 100));
         System.out.println("done");
 
      }
