@@ -29,29 +29,6 @@ public class AlternatingSplit {
 
         return head2;
 
-//        IntList head2, currr2;
-//
-//        curr1 = head1;
-//        head2 = new IntList(curr1.next.value);
-//        currr2 = head2;
-//        currr2.next = null;
-//        curr1.next = curr1.next.next;
-//
-//        while (curr1 != null) {
-//            if (curr1.next != null) {
-//                curr1 = curr1.next;
-//                currr2.next = new IntList(curr1.next.value);
-//                currr2 = currr2.next;
-//                curr1.next = curr1.next.next;
-//            }
-//            else {
-//                currr2.next = null;
-//            }
-//        }
-//
-//        return head2;
-
-
     }
 
     public static void main(String[] args) {
