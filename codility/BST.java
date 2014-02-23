@@ -149,6 +149,7 @@ public class BST {
         System.out.println(BST.findClosestValue(root, 100));
 
         System.out.println(BST.verifyBST(root,Integer.MIN_VALUE,Integer.MAX_VALUE));
+        BST.DoubleTree(root);
         System.out.println("done");
 
      }
@@ -163,6 +164,23 @@ public class BST {
 
     }
 
+
+    public static void DoubleTree(Tree root){
+        if(root == null) System.out.print("I shouldnt be here");
+        if(root.left != null)
+            DoubleTree(root.left);
+        //DoubleTree(root);
+        if(root.right != null)
+            DoubleTree(root.right);
+
+        Tree temp = root.left;
+        root.left = new Tree(root.value);
+        root.left.left = temp;
+
+
+
+
+    }
 
 
 
