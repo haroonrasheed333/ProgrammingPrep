@@ -49,11 +49,10 @@ ProgrammingPrep
 8. [Double Tree](codility/BST.java#L143)
 9. [Size of a Binary Tree](codility/BST.java#L160)
 10. [Maximum Depth](codility/BST.java#L167)
-11. [Get Maximum of BST](codility/BST.java#L178)
-12. [Get Minimum of BST](codility/BST.java#L186)
-13. [Get Maximum of Binary Tree](codility/BST.java#L196)
-14. [Get Minimum of Binary Tree](codility/BST.java#L204)
-15. 
+11. [Get Maximum of Binary Tree](codility/BST.java#L178)
+12. [Get Minimum of Binary Tree](codility/BST.java#L186)
+13. [Get Maximum of BST](codility/BST.java#L196)
+14. [Get Minimum of BST](codility/BST.java#L204)
 
 ###Graphs
 1. [Kevin Bacon - Dijkstra](djikstra.py)
