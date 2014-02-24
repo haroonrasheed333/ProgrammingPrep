@@ -39,20 +39,20 @@ ProgrammingPrep
 
 ###Binary Trees
 ####All Binary Tree programs are in the same file
-1. [Construct BST](codility/BST.java)
-2. [In Order Traversal](codility/BST.java)
-3. [Post Order Traversal](codility/BST.java)
-4. [Pre Order Traversal](codility/BST.java)
-5. [Search for a value](codility/BST.java)
-6. [Find Closest Value](codility/BST.java)
-7. [Verify BST](codility/BST.java)
-8. [Double Tree](codility/BST.java)
-9. [Size of a Binary Tree](codility/BST.java)
-10. [Maximum Depth](codility/BST.java)
-11. [Get Maximum of BST](codility/BST.java)
-12. [Get Minimum of BST](codility/BST.java)
-13. [Get Maximum of Binary Tree](codility/BST.java)
-14. [Get Minimum of Binary Tree](codility/BST.java)
+1. [Construct BST](codility/BST.java#L10)
+2. [In Order Traversal](codility/BST.java#L35)
+3. [Post Order Traversal](codility/BST.java#L47)
+4. [Pre Order Traversal](codility/BST.java#L59)
+5. [Search for a value](codility/BST.java#L71)
+6. [Find Closest Value](codility/BST.java#L87)
+7. [Verify BST](codility/BST.java#L133)
+8. [Double Tree](codility/BST.java#L143)
+9. [Size of a Binary Tree](codility/BST.java#L160)
+10. [Maximum Depth](codility/BST.java#L167)
+11. [Get Maximum of BST](codility/BST.java#L178)
+12. [Get Minimum of BST](codility/BST.java#L186)
+13. [Get Maximum of Binary Tree](codility/BST.java#L196)
+14. [Get Minimum of Binary Tree](codility/BST.java#L204)
 15. 
 
 ###Graphs
