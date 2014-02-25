@@ -46,7 +46,7 @@ public class QuickSelect1
 
         // Pick up a random pivot and swap it to the first position
         int r = (int) (Math.random() * (last - first + 1)) + first;
-        swap(data, first, r);
+            swap(data, first, r);
 
         int pivot = partition(data, first, last);
 
@@ -68,42 +68,34 @@ public class QuickSelect1
     public static void main(String[] args)
     {
 
-        int[] array = {38, 27, 43, 3, 9, 82, 10};
+        int[] array = {3, 1, 5, 2, 4, 8, 6};
         System.out.println("begin with: \n" + Arrays.toString(array));
         System.out.println("------------------");
 
         int ind;
-        ind = quickSelect(array, 0, array.length - 1, 0);
-        System.out.println( "1st smallest = " + array[ind]);
-        ind = quickSelect(array, 0, array.length - 1, 1);
-        System.out.println( "2nd smallest = " + array[ind]);
-        ind = quickSelect(array, 0, array.length - 1, 2);
-        System.out.println( "3rd smallest = " + array[ind]);
         ind = quickSelect(array, 0, array.length - 1, 6);
-        System.out.println( "7th smallest = " + array[ind]);
+           System.out.println( "1st smallest = " + array[ind]);
+//        ind = quickSelect(array, 0, array.length - 1, 1);
+//        System.out.println( "2nd smallest = " + array[ind]);
+//        ind = quickSelect(array, 0, array.length - 1, 2);
+//        System.out.println( "3rd smallest = " + array[ind]);
+//        ind = quickSelect(array, 0, array.length - 1, 6);
+//        System.out.println( "7th smallest = " + array[ind]);
+
+//
+//
+//        int[] array2 = { 407, 766, 237, 761, 832, 1655, 421, 145, 688, 994, 915,
+//                953, 910, 838, 201, 571, 842, 307, 43, 79, 473, 182, 421, 7122, 140,
+//                8452, 376, 304, 546, 743, 5, 394, 672, 8439, 684, 223, 50, 601, 122,
+//                767, 853, 120, 294, 818, 1986, 130, 947, 389, 93, 88, 487, 403, 943,
+//                973, 359, 226, 228, 408, 913, 743, 458, 867, 335, 885, 19, 606, 282,
+//                655, 470, 599, 975, 984, 693, 734, 827, 878, 840, 618, 336, 638, 37,
+//                41, 552, 287, 20, 253, 288, 907, 111, 883, 73, 473, 762, 4, 11, 42 };
+//
+//        ind = quickSelect(array2, 0, array2.length - 1, 0);
+//        System.out.println( "1st smallest = " + array2[ind]);
 
 
-
-        int[] array2 = { 407, 766, 237, 761, 832, 1655, 421, 145, 688, 994, 915,
-                953, 910, 838, 201, 571, 842, 307, 43, 79, 473, 182, 421, 7122, 140,
-                8452, 376, 304, 546, 743, 5, 394, 672, 8439, 684, 223, 50, 601, 122,
-                767, 853, 120, 294, 818, 1986, 130, 947, 389, 93, 88, 487, 403, 943,
-                973, 359, 226, 228, 408, 913, 743, 458, 867, 335, 885, 19, 606, 282,
-                655, 470, 599, 975, 984, 693, 734, 827, 878, 840, 618, 336, 638, 37,
-                41, 552, 287, 20, 253, 288, 907, 111, 883, 73, 473, 762, 4, 11, 42 };
-
-        ind = quickSelect(array2, 0, array2.length - 1, 0);
-        System.out.println( "1st smallest = " + array2[ind]);
-        ind = quickSelect(array2, 0, array2.length - 1, 1);
-        System.out.println( "2nd smallest = " + array2[ind]);
-        ind = quickSelect(array2, 0, array2.length - 1, 2);
-        System.out.println( "3rd smallest = " + array2[ind]);
-        ind = quickSelect(array2, 0, array2.length - 1, 6);
-        System.out.println( "7th smallest = " + array2[ind]);
-        ind = quickSelect(array2, 0, array2.length - 1, 20);
-        System.out.println( "21st smallest = " + array2[ind]);
-        ind = quickSelect(array2, 0, array2.length - 1, 50);
-        System.out.println( "51st smallest = " + array2[ind]);
 
 
     }
