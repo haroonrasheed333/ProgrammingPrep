@@ -23,8 +23,36 @@ ProgrammingPrep
 ###Linked List
 1. [Delete Node](codility/DeleteNodeFromListGivenOnlyThatNode.java) - Delete a node from a linked list given only acces to that node
 2. [Add Two Numbers Easy](codility/AddTwoNumbersLinkedListEasy.java) - Add two numbers with each digit representing a linked list node. The digits are reversed and added to linked list.
+3. [Add Two Numbers Hard](codility/AddTwoNumbersLinkedListHard.java) - Add two numbers. Numbers are not reversed. pad zeros.
 3. [Kth Element from end of a linked list](codility/KthLastElementLinkedList.java)
 4. [Circulat Linked List](codility/CircularLinkedList.java) - Find the node at which loop occurs in a linked list
+5. [Insert in Sorted Circular Linked List](codility/InsertInSortedCircularLinkedList.java) - Insert node in a sorted circular linked List
+6. [Insert Sort linked List](codility/InSortLinkedList.java) - Function which given a list, rearranges its nodes so they are sorted in increasing order.
+7. [Intersection of 2 Linked Lists](codility/IntersectionOfConnectedLists.java) - Find the intersections points of two linked lists
+8. [Linked List Append](codility/LinkedListAppend.java) - Append to a linked list
+9. [panindrome LinkedList](codility/LinkedListPalindrome.java) - Check if a linked list is palindrome.
+10. [Linked List Sort](codility/LinkedListSort.java) - Sort a Linked List.
+11. [Partition Linked List](codility/PartitionLinkedList.java) - Partition a linked list. Given a linked list and a value, partition linked list such all nodes with lesser values are in the left and all values with higher values are in the right.
+12. [Rotate Linked List](codility/RotateLinkedList.java) - Rotate a linked list K times.
+13. [Shuffle Merge Linked List](codility/ShuffleMergeLinkedList.java) - Given two lists, merge their nodes together to make one list, taking nodes alternately between the two lists. 
+14. 
+
+###Binary Trees
+####All Binary Tree programs are in the same file
+1. [Construct BST](codility/BST.java#L10)
+2. [In Order Traversal](codility/BST.java#L35)
+3. [Post Order Traversal](codility/BST.java#L47)
+4. [Pre Order Traversal](codility/BST.java#L59)
+5. [Search for a value](codility/BST.java#L71)
+6. [Find Closest Value](codility/BST.java#L87)
+7. [Verify BST](codility/BST.java#L133)
+8. [Double Tree](codility/BST.java#L143)
+9. [Size of a Binary Tree](codility/BST.java#L160)
+10. [Maximum Depth](codility/BST.java#L167)
+11. [Get Maximum of Binary Tree](codility/BST.java#L178)
+12. [Get Minimum of Binary Tree](codility/BST.java#L186)
+13. [Get Maximum of BST](codility/BST.java#L196)
+14. [Get Minimum of BST](codility/BST.java#L204)
 
 ###Graphs
 1. [Kevin Bacon - Dijkstra](djikstra.py)
