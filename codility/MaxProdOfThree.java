@@ -32,7 +32,8 @@ class MaxProdOfThree {
 
     public static void main(String[] args) {
         int[] t = {-3,1,2,-2,5,6,1};
-        MaxProdOfThree.quickSort(t, 0, t.length - 1);
+
+         MaxProdOfThree.quickSort(t, 0, t.length - 1);
 
         int prod1 = t[0]*t[1]*t[2];
         int prod2 = t[0]*t[t.length-1] *t[t.length-2];
