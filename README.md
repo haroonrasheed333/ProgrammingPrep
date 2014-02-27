@@ -9,7 +9,7 @@ ProgrammingPrep
 5. [Perm Check - Method 2](codility/PermCheck_Method2.java) - Check if the given array of size N contains all the integers from 1 to N.
 6. [Passing Cars](codility/PassingCars.java) - Cars moving in opposite direction represented by 0's (east) and 1's (west). Find the number of passing pairs.
 7. [Frog River](codility/FrogRiver.java) - A frog has to move from its starting position to a position X in a river. There is a tree near the river and at any given time a leaf falls at a position on the river. Given an array A consisting of N integers representing the falling leaves. A[K] represents the position where one leaf falls at time K, measured in minutes. Find earliest time frog can reach position X.
-8. [Number of pairs with diff N](Pairs_hackerrank.java) - Given an array, and a number N, find the number of pairs in array with diff N.
+8. [Number of pairs with diff N](codility/Pairs_hackerrank.java) - Given an array, and a number N, find the number of pairs in array with diff N.
 9. [Max Counters](codility/MaxCounters.java)
 10. [Triangle](codility/TriangleNumber.java) - Determine whether a triangle can be built from a given set of edges.
 11. [Max Product of 3](codility/MaxProdOfThree.java) - Find the maximum product of 3 numbers in an array (can contain negative numbers)
